@@ -41,6 +41,7 @@
 
 		<footer>
 			&copy; Northampton News 2017
+			<div class="logout"> <a href="logout.php"> <button>Logout</button> </a> </div>
 		</footer>
 
 	</body>

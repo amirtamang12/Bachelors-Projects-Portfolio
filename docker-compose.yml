@@ -1,16 +1,19 @@
+version: '3.8'
+
 services:
   php:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 80:80
+      - "80:80"
     volumes:
       - ./source:/var/www/html/
 
   db:
-    image: mysql
-    command: --default-authentication-plugin=mysql_native_password
+    image: mysql:8.0
+    # REPLACE THE OLD COMMAND WITH THIS ONE:
+    command: --authentication_policy=mysql_native_password
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
@@ -21,7 +24,7 @@ services:
     image: adminer
     restart: always
     ports:
-      - 8080:8080
+      - "8080:8080"
 
 volumes:
   mysql-data:

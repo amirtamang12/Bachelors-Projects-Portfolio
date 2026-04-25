@@ -8,7 +8,7 @@ $dbcon = new PDO("mysql:host=$hostname;dbname=$dbname",$username,$password);
 
 if(isset($_POST['Email'], $_POST['Password'])) {
 
-    //prepare statement to select all users from user table
+    //prepared a statement to select all users by there email from User_account table 
     $stmt = $dbcon-> prepare('SELECT * FROM User_account WHERE Email = :Email;');
     
     $criteria = [
@@ -18,16 +18,15 @@ if(isset($_POST['Email'], $_POST['Password'])) {
     $stmt -> execute($criteria);
     $users = $stmt -> fetch();
     
-    //un hashing passwords!
+    //verifing passwords
     if(password_verify($_POST['Password'], $users['Password'])) {
     $_SESSION['login'] = true;
     $_SESSION['Email'] = $_POST['Email'];
     
-    //Once logged in re-directs the user to the homepage
+    //after ckicking login, user goes to homepage
     header("Location: index.php");
     die();
     }
-    //If username and password do not match display this message
     else {
     echo 'Username OR Password did not match our records. Please try again';
     }
@@ -64,6 +63,7 @@ if(isset($_POST['Email'], $_POST['Password'])) {
 			
 			<article>
         <h3>Log In</h3>
+		<!-- this is form for login -->
             <form action="login.php" method = "POST">
                 <label> Email:</label>
                     <input type="email" name="Email" placeholder="Email"/><br>

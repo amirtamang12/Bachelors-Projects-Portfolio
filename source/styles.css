@@ -76,9 +76,6 @@ textarea {height: 100px;}
 form input[type="text"], form input[type="password"], textarea {color: #999; font-family: verdana, sans-serif}
 input[type="submit"] {clear: both; margin-left: 220px; width: 220px;}
 
-/* to make to the link show below the forms */
-.appeardown{display: inline-flex;}
-
 section a {color: #444;}
 
 form select {width: 220px;}

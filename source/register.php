@@ -1,9 +1,11 @@
 <?php
+//defining variables
 $hostname='db';
 $username='root';
 $password='example';
 $dbname='User';
 
+// creating a PDO 
 $dbcon = new PDO("mysql:host=$hostname;dbname=$dbname",$username,$password);
 
 ?>
@@ -35,6 +37,7 @@ $dbcon = new PDO("mysql:host=$hostname;dbname=$dbname",$username,$password);
 		<main>
             <article>
                 <h3>Register</h3>
+                <!-- form for registration -->
                     <form action="register.php" method = "POST">
                         <label> Full Name:</label>
                         <input type="text" name="Name" placeholder=" Username" /><br>
@@ -50,6 +53,7 @@ $dbcon = new PDO("mysql:host=$hostname;dbname=$dbname",$username,$password);
 
             <div>
             <?php
+            // prepared a statement inserting values into User_account table
             $stmt = $dbcon->prepare('INSERT INTO User_account(Name, Email, Password)
             VALUES(:Name, :Email, :Password)');
 

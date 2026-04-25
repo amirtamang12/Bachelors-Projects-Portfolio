@@ -1,11 +1,12 @@
 <?php
-session_start();
+session_start(); //to make users come to home after logging in
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="styles.css"/>
+		<!-- for connecting css file -->
+		<link rel="stylesheet" href="styles.css"/> 
 		<title>Northampton News - Home</title>
 	</head>
 	<body>
@@ -24,6 +25,7 @@ session_start();
 						<li><a class="articleLink" href="technology.php">Technology</a></li>
 					</ul>
                 </li>
+				    <!-- for login and register buttons -->
 				    <div class="login"> <a href="login.php"> <button>Log In</button> </a></div>
 					<div class="reg"> <a href="register.php"> <button>Register</button> </a> </div>
 			</ul>
@@ -35,7 +37,7 @@ session_start();
 				<p>These are articles ordered by latest posted date</p>
 
 				<ul>
-					
+					<!-- these are lists of articles -->
 					<li><a class="articleLink" href="technologynews3.php">Far out: NASA space telescope's 1st cosmic view goes deep</a></li>
 					<li><a class="articleLink" href="technologynews2.php">Apple maintains prices on new iPhones despite inflation</a></li>
 					<li><a class="articleLink" href="technologynews1.php">New space telescope shows Jupiter's auroras, tiny moons</a></li>
@@ -53,6 +55,8 @@ session_start();
 
 		<footer>
 			&copy; Northampton News 2017
+			<!-- logout button is here -->
+			<div class="logout"> <a href="logout.php"> <button>Logout</button> </a> </div>
 		</footer>
 
 	</body>
