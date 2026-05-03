@@ -1,0 +1,9 @@
+homepageurl: http://localhost/register.php
+
+adminuser: admin@admin.com
+
+adminpass: admin
+
+nonadminuser: user@user.com
+
+nonadminpassword: user
