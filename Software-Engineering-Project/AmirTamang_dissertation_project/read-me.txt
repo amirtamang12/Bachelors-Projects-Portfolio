@@ -1,0 +1,58 @@
+******PHP Adminer********
+username: Admin1
+password: password
+
+******Users*******
+1. Amir Tamang (Admin)
+amir.yonjan12@gmail.com
+123456
+
+2. Siddharth Yonzone (Customer)
+sid.yonzone@gmail.com
+654321
+
+## Screen Mock-ups
+![Home Page](screenshots/home_mockup.png)
+![Admin Dashboard](screenshots/admin_dashboard.png)
+![Pet Store](screenshots/pet_store.png)
+
+***
+# Pet Buy, Sell, and Adopt Website
+**Bachelor of Science (Computing) Final Year Dissertation**
+
+## Project Overview
+This project addresses the inefficiencies in traditional pet acquisition by providing a centralized, user-centric e-commerce platform. It facilitates secure interactions between pet enthusiasts, animal shelters, and responsible breeders to promote animal welfare and responsible ownership.
+
+### Key Features
+* Dynamic Marketplace: Full CRUD capabilities for pets, products, and categories.
+* Advanced Search: Search functionality for pets and supplies with partial name matching.
+* User Authentication: Secure registration and login systems with hashed passwords for data protection 
+* Management Dashboards: Admin panel for tracking total income, pet inventory, and user orders.
+* E-commerce Workflow: Integrated shopping cart, streamlined checkout, and softcopy receipt generation.
+
+## Technical Stack
+The system was built using a contemporary set of web development tools to ensure responsiveness and functionality.
+
+* Front-End: HTML5, CSS3, JavaScript, Bootstrap 4.
+* Back-End: PHP with the Laravel framework.
+* Database: MySQL Relational Database Management System (RDBMS).
+* DevOps: Containerized using "Docker" for consistent development and deployment environments.
+* Plugins: jQuery, Flat Icons, DataTables, and Font Awesome.
+
+## System Architecture & Design
+This project followed a disciplined Agile (Scrum) methodology. The architectural design was documented through:
+* Entity Relationship (ER) Diagrams: To conceptualize the relational database structure.
+* UML Modeling: Including Use Case, Class, Flow, and Activity diagrams to map system logic.
+* Requirements Engineering: Utilizing stakeholder interviews and background research to define functional and performance specifications.
+
+## Testing & Quality Assurance
+To ensure system reliability, three testing tiers were implemented:
+1.  Unit Testing: Validating discrete code components and functions.
+2.  Black Box Testing: Verifying functionality against original specifications without internal code analysis.
+3.  User Acceptance Testing (UAT): Real-world task execution by target users to evaluate usability and interface design.
+
+## Future Scope
+The platform is designed for scalability with planned enhancements including:
+* Advanced AI chatbots for customer support.
+* Location-based service management for pet grooming and daycare.
+* Integration of secure third-party payment gateways.
